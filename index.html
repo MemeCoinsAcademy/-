@@ -24,7 +24,7 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;cursor: url("data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='26'%20height='26'%20viewBox='0%200%2026%2026'><line%20x1='13'%20y1='1'%20x2='13'%20y2='25'%20stroke='%230bab6a'%20stroke-width='2'%20stroke-linecap='round'/><rect%20x='8'%20y='8'%20width='10'%20height='10'%20rx='1.5'%20fill='%230bab6a'%20stroke='%230a8a55'%20stroke-width='1'/></svg>") 13 13, auto;}
+body{background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 ::selection{background:var(--green);color:#fff}
 h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:-.02em;line-height:1.08}
 h1{font-size:clamp(38px,6vw,68px)}
@@ -105,11 +105,6 @@ nav{max-width:1180px;margin:0 auto;padding:0 40px;height:70px;display:flex;align
 .bar-row b{color:var(--ink);text-align:right;font-weight:600}
 .book-float{position:absolute;right:-26px;bottom:-34px;width:140px;border-radius:8px;box-shadow:var(--sh2);transform:rotate(5deg);animation:float 9s ease-in-out infinite}
 @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:42px}.book-float{width:104px;right:-8px;bottom:-22px}}
-
-/* faded moving background chart */
-.hero-chartline{position:absolute;top:8%;left:0;width:200%;height:70%;opacity:.16;pointer-events:none;z-index:1;animation:chartdrift 30s linear infinite}
-@keyframes chartdrift{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-@media(max-width:900px){.hero-chartline{opacity:.13}}
 
 /* stats strip */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
@@ -204,13 +199,6 @@ footer{background:#fff;border-top:1px solid var(--line);padding:44px 0 38px}
 .fade{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
 .fade.in{opacity:1;transform:none}
 </style>
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "ylmrpoyp1i");
-</script>
 </head>
 <body>
 
@@ -222,97 +210,15 @@ footer{background:#fff;border-top:1px solid var(--line);padding:44px 0 38px}
     <div class="navlinks">
       <a href="#guide">The Guide</a>
       <a href="#research">Research</a>
-      <a href="contact.html">Contact Us</a>
+      <a href="#chart-sec">Market</a>
       <a href="#faq">FAQ</a>
     </div>
-    <a href="https://buy.stripe.com/5kQ00j2MwesWbV15QYbAs00" class="nav-cta">Get the Guide</a>
+    <a href="https://claude.ai/artifact/WD1tNqhMhiuKEFgXdJV9tt" id="langToggle" class="btn-ghost" style="padding:9px 14px;font-size:13px;margin-right:10px">🇬🇷 Ελληνικά</a><a href="https://buy.stripe.com/5kQ00j2MwesWbV15QYbAs00" class="nav-cta">Get the Guide</a>
   </nav>
 </header>
 
 <section class="hero" id="top">
   <div class="blob b1"></div><div class="blob b2"></div>
-  <svg class="hero-chartline" viewBox="0 0 2000 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-    <line x1="25.0" y1="177.3" x2="25.0" y2="226.1" stroke="#0bab6a" stroke-width="2"/>
-    <rect x="12.5" y="192.1" width="25.0" height="27.9" fill="#0bab6a"/>
-    <line x1="75.0" y1="175.5" x2="75.0" y2="204.7" stroke="#0bab6a" stroke-width="2"/>
-    <rect x="62.5" y="181.3" width="25.0" height="10.7" fill="#0bab6a"/>
-    <line x1="125.0" y1="170.0" x2="125.0" y2="187.7" stroke="#0bab6a" stroke-width="2"/>
-    <rect x="112.5" y="176.0" width="25.0" height="5.3" fill="#0bab6a"/>
-    <line x1="175.0" y1="169.2" x2="175.0" y2="210.5" stroke="#e0574a" stroke-width="2"/>
-    <rect x="162.5" y="176.0" width="25.0" height="26.1" fill="#e0574a"/>
-    <line x1="225.0" y1="188.5" x2="225.0" y2="248.9" stroke="#e0574a" stroke-width="2"/>
-    <rect x="212.5" y="202.2" width="25.0" height="35.8" fill="#e0574a"/>
-    <line x1="275.0" y1="183.8" x2="275.0" y2="247.3" stroke="#0bab6a" stroke-width="2"/>
-    <rect x="262.5" y="201.7" width="25.0" height="36.3" fill="#0bab6a"/>
-    <line x1="325.0" y1="161.5" x2="325.0" y2="218.9" stroke="#0bab6a" stroke-width="2"/>
-    <rect x="312.5" y="171.1" width="25.0" height="30.6" fill="#0bab6a"/>
-    <line x1="375.0" y1="156.5" x2="375.0" y2="188.2" stroke="#e0574a" stroke-width="2"/>
-    <rect x="362.5" y="171.1" width="25.0" height="6.5" fill="#e0574a"/>
-    <line x1="425.0" y1="136.8" x2="425.0" y2="185.7" stroke="#0bab6a" stroke-width="2"/>
-    <rect x="412.5" y="142.7" width="25.0" height="35.0" fill="#0bab6a"/>
-    <line x1="475.0" y1="127.2" x2="475.0" y2="156.5" stroke="#0bab6a" stroke-width="2"/>
-    <rect x="462.5" y="136.9" width="25.0" height="5.8" fill="#0bab6a"/>
-    <line x1="525.0" y1="104.0" x2="525.0" y2="152.4" stroke="#0bab6a" stroke-width="2"/>
-    <rect x="512.5" y="120.9" width="25.0" height="16.0" fill="#0bab6a"/>
-    <line x1="575.0" y1="108.0" x2="575.0" y2="145.0" stroke="#e0574a" stroke-width="2"/>
-    <rect x="562.5" y="120.9" width="25.0" height="6.0" fill="#e0574a"/>
-    <line x1="625.0" y1="90.2" x2="625.0" y2="133.6" stroke="#0bab6a" stroke-width="2"/>
-    <rect x="612.5" y="109.9" width="25.0" height="17.0" fill="#0bab6a"/>
-    <line x1="675.0" y1="102.6" x2="675.0" y2="142.8" stroke="#e0574a" stroke-width="2"/>
-    <rect x="662.5" y="109.9" width="25.0" height="20.6" fill="#e0574a"/>
-    <line x1="725.0" y1="114.0" x2="725.0" y2="157.5" stroke="#e0574a" stroke-width="2"/>
-    <rect x="712.5" y="130.4" width="25.0" height="13.5" fill="#e0574a"/>
-    <line x1="775.0" y1="113.6" x2="775.0" y2="157.8" stroke="#0bab6a" stroke-width="2"/>
-    <rect x="762.5" y="129.0" width="25.0" height="14.9" fill="#0bab6a"/>
-    <line x1="825.0" y1="107.9" x2="825.0" y2="148.2" stroke="#0bab6a" stroke-width="2"/>
-    <rect x="812.5" y="125.5" width="25.0" height="3.5" fill="#0bab6a"/>
-    <line x1="875.0" y1="119.6" x2="875.0" y2="154.1" stroke="#e0574a" stroke-width="2"/>
-    <rect x="862.5" y="125.5" width="25.0" height="13.1" fill="#e0574a"/>
-    <line x1="925.0" y1="121.3" x2="925.0" y2="187.3" stroke="#e0574a" stroke-width="2"/>
-    <rect x="912.5" y="138.6" width="25.0" height="39.4" fill="#e0574a"/>
-    <line x1="975.0" y1="172.7" x2="975.0" y2="203.5" stroke="#e0574a" stroke-width="2"/>
-    <rect x="962.5" y="178.1" width="25.0" height="13.5" fill="#e0574a"/>
-    <line x1="1025.0" y1="177.3" x2="1025.0" y2="226.1" stroke="#0bab6a" stroke-width="2"/>
-    <rect x="1012.5" y="192.1" width="25.0" height="27.9" fill="#0bab6a"/>
-    <line x1="1075.0" y1="175.5" x2="1075.0" y2="204.7" stroke="#0bab6a" stroke-width="2"/>
-    <rect x="1062.5" y="181.3" width="25.0" height="10.7" fill="#0bab6a"/>
-    <line x1="1125.0" y1="170.0" x2="1125.0" y2="187.7" stroke="#0bab6a" stroke-width="2"/>
-    <rect x="1112.5" y="176.0" width="25.0" height="5.3" fill="#0bab6a"/>
-    <line x1="1175.0" y1="169.2" x2="1175.0" y2="210.5" stroke="#e0574a" stroke-width="2"/>
-    <rect x="1162.5" y="176.0" width="25.0" height="26.1" fill="#e0574a"/>
-    <line x1="1225.0" y1="188.5" x2="1225.0" y2="248.9" stroke="#e0574a" stroke-width="2"/>
-    <rect x="1212.5" y="202.2" width="25.0" height="35.8" fill="#e0574a"/>
-    <line x1="1275.0" y1="183.8" x2="1275.0" y2="247.3" stroke="#0bab6a" stroke-width="2"/>
-    <rect x="1262.5" y="201.7" width="25.0" height="36.3" fill="#0bab6a"/>
-    <line x1="1325.0" y1="161.5" x2="1325.0" y2="218.9" stroke="#0bab6a" stroke-width="2"/>
-    <rect x="1312.5" y="171.1" width="25.0" height="30.6" fill="#0bab6a"/>
-    <line x1="1375.0" y1="156.5" x2="1375.0" y2="188.2" stroke="#e0574a" stroke-width="2"/>
-    <rect x="1362.5" y="171.1" width="25.0" height="6.5" fill="#e0574a"/>
-    <line x1="1425.0" y1="136.8" x2="1425.0" y2="185.7" stroke="#0bab6a" stroke-width="2"/>
-    <rect x="1412.5" y="142.7" width="25.0" height="35.0" fill="#0bab6a"/>
-    <line x1="1475.0" y1="127.2" x2="1475.0" y2="156.5" stroke="#0bab6a" stroke-width="2"/>
-    <rect x="1462.5" y="136.9" width="25.0" height="5.8" fill="#0bab6a"/>
-    <line x1="1525.0" y1="104.0" x2="1525.0" y2="152.4" stroke="#0bab6a" stroke-width="2"/>
-    <rect x="1512.5" y="120.9" width="25.0" height="16.0" fill="#0bab6a"/>
-    <line x1="1575.0" y1="108.0" x2="1575.0" y2="145.0" stroke="#e0574a" stroke-width="2"/>
-    <rect x="1562.5" y="120.9" width="25.0" height="6.0" fill="#e0574a"/>
-    <line x1="1625.0" y1="90.2" x2="1625.0" y2="133.6" stroke="#0bab6a" stroke-width="2"/>
-    <rect x="1612.5" y="109.9" width="25.0" height="17.0" fill="#0bab6a"/>
-    <line x1="1675.0" y1="102.6" x2="1675.0" y2="142.8" stroke="#e0574a" stroke-width="2"/>
-    <rect x="1662.5" y="109.9" width="25.0" height="20.6" fill="#e0574a"/>
-    <line x1="1725.0" y1="114.0" x2="1725.0" y2="157.5" stroke="#e0574a" stroke-width="2"/>
-    <rect x="1712.5" y="130.4" width="25.0" height="13.5" fill="#e0574a"/>
-    <line x1="1775.0" y1="113.6" x2="1775.0" y2="157.8" stroke="#0bab6a" stroke-width="2"/>
-    <rect x="1762.5" y="129.0" width="25.0" height="14.9" fill="#0bab6a"/>
-    <line x1="1825.0" y1="107.9" x2="1825.0" y2="148.2" stroke="#0bab6a" stroke-width="2"/>
-    <rect x="1812.5" y="125.5" width="25.0" height="3.5" fill="#0bab6a"/>
-    <line x1="1875.0" y1="119.6" x2="1875.0" y2="154.1" stroke="#e0574a" stroke-width="2"/>
-    <rect x="1862.5" y="125.5" width="25.0" height="13.1" fill="#e0574a"/>
-    <line x1="1925.0" y1="121.3" x2="1925.0" y2="187.3" stroke="#e0574a" stroke-width="2"/>
-    <rect x="1912.5" y="138.6" width="25.0" height="39.4" fill="#e0574a"/>
-    <line x1="1975.0" y1="172.7" x2="1975.0" y2="203.5" stroke="#e0574a" stroke-width="2"/>
-    <rect x="1962.5" y="178.1" width="25.0" height="13.5" fill="#e0574a"/>
-  </svg>
   <div class="wrap hero-grid">
     <div>
       <div class="eyebrow"><i></i>Live market education</div>
@@ -323,7 +229,7 @@ footer{background:#fff;border-top:1px solid var(--line);padding:44px 0 38px}
         <a href="#guide" class="btn-ghost">See what's inside</a>
       </div>
       <div class="trust">
-        <div><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>63-page guide</div>
+        <div><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>53-page guide</div>
         <div><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Beginner friendly</div>
         <div><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Instant access</div>
       </div>
@@ -343,7 +249,7 @@ footer{background:#fff;border-top:1px solid var(--line);padding:44px 0 38px}
 
 <section class="pad" style="padding:56px 0;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
   <div class="wrap stats fade">
-    <div class="stat"><b data-c="63">0</b><span>Pages of practical material</span></div>
+    <div class="stat"><b data-c="53">0</b><span>Pages of practical material</span></div>
     <div class="stat a"><b data-c="10">0</b><span>Step-by-step modules</span></div>
     <div class="stat v"><b data-c="7">0</b><span>Bonus checklists & tools</span></div>
     <div class="stat"><b data-c="8">0</b><span>Stage research system</span></div>
